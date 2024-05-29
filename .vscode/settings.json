@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5443,
+      "driver": "PostgreSQL",
+      "name": "review-landing-page-BE",
+      "database": "review-landing-page-BE-DB",
+      "username": "review-landing-page-BE"
+    }
+  ]
+}
