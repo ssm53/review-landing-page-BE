@@ -8,7 +8,8 @@
     "start": "npx dotenv -e .env.development node server.js",
     "start:dev": "npx dotenv -e .env.development nodemon server.js",
     "migrate:dev": "dotenv -e .env.development -- npx prisma migrate dev",
-    "start:prod": "prisma migrate deploy && node server.js"
+    "start:prod": "prisma migrate deploy && node server.js",
+    "migrate:create": "npm run migrate:dev --create-only"
   },
   "keywords": [],
   "author": "",
