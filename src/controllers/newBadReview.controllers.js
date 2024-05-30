@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
     const newBadReview = await prisma.badReviews.create({
       data: {
         review: data.recommendation,
-        reviewTime: malaysiaTime.toJSDate(),
+        reviewTime: malaysiaTime,
       },
     });
 
