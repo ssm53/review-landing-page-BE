@@ -14,7 +14,7 @@ datasource db {
 }
 
 model BadReviews {
-  id       Int      @id @default(autoincrement())
-  review   String?
-  dateTime DateTime? @default(now())
+  id         Int       @id @default(autoincrement())
+  review     String?
+  reviewTime DateTime? @default(now())
 }
