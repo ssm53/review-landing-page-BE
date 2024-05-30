@@ -16,5 +16,5 @@ datasource db {
 model BadReviews {
   id       Int      @id @default(autoincrement())
   review   String?
-  dateTime DateTime @default(now())
+  dateTime DateTime? @default(now())
 }
