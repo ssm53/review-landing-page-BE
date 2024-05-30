@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   const data = req.body;
+  console.log(data);
   try {
     const newBadReview = await prisma.badReviews.create({
       data: {
