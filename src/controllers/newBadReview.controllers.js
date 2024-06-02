@@ -5,10 +5,10 @@ import { DateTime } from "luxon"; // Import luxon library
 
 const router = express.Router();
 
-const gmtTime = DateTime.local().setZone("Asia/Kuala_Lumpur");
-const malaysiaTime = gmtTime.plus({ hours: 8 });
-
 router.post("/", async (req, res) => {
+  const gmtTime = DateTime.local().setZone("Asia/Kuala_Lumpur");
+  const malaysiaTime = gmtTime.plus({ hours: 8 });
+
   const data = req.body;
   console.log(data);
   try {
